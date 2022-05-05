@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.json"></script>
+  <script src="main.js"></script>
+</head>
+<body onload="showOnLoad()">
+   <div class="wholebody">  <div class="container-1">
+      <div class="box-1"> 
+        <div class="logo"></div>
+        <img src="image/abc.png" alt="clogo" /></div>
+      <div class="box-2"> 
+        <img src="image/logo.svg" alt="logo" />  </div>
+    <div class="box-3"> 
+          <h3></h3> </div>       
+    </div>
+    <div class="box-4"><h2>Invoice List</h2>
+    </div>
+    <div class="LilGrid"> <div class="buttonclass"> 
+     <div class="buttonFlex">
+    <button onclick="add()" id="Add" type="Addbutton">Add</button>
+    <button onclick="edit()" id="Edit" type="Editbutton">Edit</button>
+    <button onclick="deleteM()" id="Delete" type="Deletebutton">Delete</button>
+
+      <div class="button"> <div class="search"> 
+        <input type="text" id="search" name="lname" placeholder="Search by invoice number"></div>
+      </div>
+     </div>
+  </div>
+
+  <div class="container-3">
+      <table class="Invoice">
+        <thead id="main-table">
+           
+        </thead>   
+      </table>
+  </div>
+    </div>
+  </div> </div>
+
+  <div id="adder" class="innerpopAdd">
+    <div   class="invoiceadd divvAdd">
+        <div class="head">
+            <span class="top">Add Invoice</span>
+          <img onclick="addClose()" class="crossAdd" src="image/baseline-close-24px.svg" alt="close" >
+        </div>
+        <div  class="divleft">
+            <label for="CustomerName">Customer Name </label>
+            <input type="text" id="Cname" name="Cname" ><br>
+    
+            <label for="CustomerNumber">Customer No*</label>
+            <input type="text" id="Cnumber" name="Cnumber" ><br>
+    
+            <label for="InvoiceNo">Invoice No*</label>
+            <input type="text" id="invoiceNo" name="Inumber" ><br>
+    
+            <label for="InvoiceAmount">Invoice Amount*</label>
+            <input type="text" id="iamount" name="Iamount" ><br>
+        </div>
+        <div class="divright">
+            <label for="Date">Dute Date*  </label>
+            <input type="date" id="date" name="Date" ><br>
+    
+            <label for="Notes">Notes  </label>
+            <input type="text" id="notes" name="Notes" ><br>
+        </div>
+       <div class="foot">
+        <span class="cancel">Cancel</span>
+        <button id="addclear" type="button"> Clear</button>
+        <button id="addadd" type="button"> Add</button>     
+       </div>
+    </div></div>
+
+    <div id="editior" class="innerpop">
+      <div  class="divv">
+          <div class="head">
+              <span class="top">Edit Invoice</span>
+            <img onclick="editClose()" class="crossEdit" src="image/baseline-close-24px.svg" alt="close" >  
+          </div>
+          <div class="mid">
+              <label for="InvoiceAmount">Invoice Amount</label>
+              <input type="text" id="iamount" name="Iamount" ><br>
+      
+              <label for="Notes">Notes  </label>
+              <input type="text" id="notes" name="Notes" ><br>
+          </div>
+          <div class="footer">
+              <span id="fooCancle">Cancel</span>
+              <button id="Reset" type="button"> Reset</button>
+              <button id="Save" type="button"> Save</button>
+             </div>         
+      </div>
+      </div>
+     
+      <div id="del" class="innerpop">
+        <div  class="divv">
+            <div class="head">
+                <span class="top">Delete record(s)</span>
+              <img class="crossDelete" onclick="deleteMClose()" src="image/baseline-close-24px.svg" alt="close" >   
+            </div>
+            <div class="del-content">
+              <p class="pp">You'll lose your record(s) after this action. We can't recover them once you delete.</p><p>Are you sure you want to permanently delete them?</p>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div class="foot">
+            <button id="deldelete" type="button"> Delete</button>
+            <button id="delcancle" type="button"> Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+    
+ 
+</body>
+</html>

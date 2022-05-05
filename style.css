@@ -1,0 +1,524 @@
+html{
+  font-size: calc(0.75vh + 00.75vh);
+  background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 100vh;
+}
+.wholebody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-1{
+  display: flex; 
+}
+ 
+ 
+container-1 div{
+  border: 1px #ccc solid;
+  padding: 10px;
+ }
+
+ .box-1{
+flex: 3;
+ }
+ .box-2{
+   flex: 2;
+   top: 22px;
+ 
+}
+.box-3{
+  flex: 3;
+}
+.box-4{
+  flex: 4;
+}
+
+.box-2 img{
+  justify-content: center;
+object-fit: contain;
+max-width: 100%;
+max-height: 100%;
+left: 843px; 
+width: 235px;
+height: 50px;
+background: url('image/logo.svg');
+opacity: 1;
+}
+.box-1 img{
+  justify-content: center;
+  background: url('image/abc.png');
+  opacity: 1;
+}
+.box-4 h2{
+top: 100px;
+left: 30px;
+width: 141px;
+height: 31px;
+text-align: left;
+font: normal normal normal 28px/32px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+}
+ 
+ /*table padding*/ 
+.container-3{
+   padding-left: 20px;
+   padding-top: 21px;
+ }
+ /*2nd grid*/
+.LilGrid{
+  height: 80vh;
+  margin: 5px;
+  color: white;
+  font-size: 18px;
+  background: #273D49CC 0% 0% no-repeat padding-box;;
+
+  border-radius: 10px;
+  opacity: 1;
+}
+.buttonclass{
+  padding-top: 30px;
+  padding-right: 45px;
+}
+.buttonFlex{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+#Add{
+color: white; 
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+width: 80px;
+height: 35px;
+background: #273D49CC;
+padding-left: 10px;
+ }
+#Edit{
+color: white; 
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+width: 80px;
+height: 35px;
+background: #273D49CC;
+padding-left: 10px;
+}
+#Delete{
+  color: white; 
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+width: 80px;
+height: 35px;
+background: #273D49CC;
+padding-left: 10px;
+}
+.button{
+  text-align: center;
+  padding-left: 45px;
+   
+}
+#search 
+{
+color: white;
+text-align: left;
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+width: 200px;
+height: 32px;
+background: #273D49CC;
+}
+::placeholder { 
+   
+  color:white;
+  opacity: 1;  
+}
+/*table css*/
+.Invoice{
+  border-collapse: collapse;
+  margin: 50px,0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.10);
+   
+}
+.Invoice thead tr{
+  text-align: center;
+font: normal normal normal 15px/21px Ubuntu;
+letter-spacing: 0px;
+color: #97A1A9;
+opacity: 1;
+}
+.Invoice td{
+  padding: 20px 25px;
+  text-align: left;
+font: normal normal normal 13px/18px Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+font-size: 13px 50px;
+}
+.Invoice th{
+  font-weight: bold;
+  padding: 8px 15px;
+}
+tr:nth-child(even){
+  background: #283A46 0% 0% no-repeat padding-box;
+border-radius: 4px;
+opacity: 1;
+  border-radius: 4px;
+  opacity: 1;
+}
+/*table css done*/
+/*inner side add,delete,edit*/
+ 
+.innerpop,.innerpopAdd{
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+display: none;
+
+
+}
+
+.divv,.divvAdd{
+flex: 0;
+justify-content: center;
+align-items: center;
+display: flex;
+background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+max-height: 100vh;
+padding: 10px;
+flex-wrap: wrap;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+}
+.divvAdd{
+  flex: 1;
+  max-width: 850px;
+}
+.head{
+border-bottom:1px solid #01121d;
+flex-basis: 100%;
+border-radius: 10px 10px 0px 0px;
+}
+.foot{
+  flex-basis: 100%;
+  margin-top: 20px;
+  
+border-top:1px solid #01121d;
+  margin-top: 1px;
+  padding-bottom: 15px;
+  }
+
+.top{
+  width: 147px;
+height: 31px;
+text-align: left;
+
+margin: 30px;
+display: inline-block;
+font-size: 28px;
+font: normal normal normal  Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+.crossAdd
+{
+display: inline-block;
+float: none;
+margin: 30px;
+width: 24px;
+height: 24px;
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.divleft
+{
+  margin-top: 10px;
+  text-align: left;
+  display: flexbox;
+  flex: 40%;
+}
+
+.divright
+{ 
+  display: flexbox;
+  margin-top: 10px;
+  text-align: left;  
+  flex: 40%;
+  
+}
+#Cname,#Cnumber,#invoiceNo,#iamount,#date,#notes
+{
+
+  width: 200px;
+  height: 45px;
+  margin-top: 20px;
+  text-align: left;
+  background: #283A46 0% 0% no-repeat padding-box;
+  border: 1px solid #356680;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.cancel{
+width: 60px;
+height: 23px;
+margin-left: 50px;
+margin-bottom: 20px;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0px;
+color: #14AFF1;
+opacity: 1;
+margin-top: 20px;
+display: inline-flex;
+padding: 5px;
+}
+#addclear
+{
+width: 87px;
+height: 45px;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+margin-top: 20px;
+background-color: #2A3E4C;
+color: #FFFFFF;
+display: inline-flexbox;
+float: right;
+margin-right: 20px;
+}
+#addadd
+{
+  width: 77px;
+height: 45px;
+color: #FFFFFF;
+margin-top: 20px;
+margin-right: 20px;
+background: #14AFF1 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+float: right;
+display: inline-flexbox;
+}
+
+/* pop 2 */
+
+
+
+.top
+{
+  width: 217px;
+height: 31px;
+text-align: left;
+
+margin: 30px;
+display: inline-block;
+font-size: 28px;
+font-family: normal normal normal  Ubuntu;
+letter-spacing: 0px;
+color: #FFFFFF;
+text-transform: capitalize;
+opacity: 1;
+}
+.divv hr{
+border-color: rgba(0, 0, 0, 0.315);
+}
+
+.crossDelete
+{
+  margin: 30px;
+  float: none;
+width: 24px;
+height: 24px;
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+display: inline-block;
+}
+
+
+
+
+
+
+#delcancle
+{
+width: 100px;
+height: 45px;
+border: 1px solid #14AFF1;
+border-radius: 10px;
+opacity: 1;
+margin-top: 20px;
+background-color: #2A3E4C;
+color: #FFFFFF;
+}
+#deldelete
+{
+  width: 101px;
+height: 45px;
+
+color: #FFFFFF;
+margin-top: 20px;
+background: #14AFF1 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+}
+#deldelete,#delcancle {
+  float: right;
+  margin: 10px;
+}
+
+.middelete
+{
+  margin-left: 30px;
+  margin-right: 50px;
+  text-align: left;
+  font: normal normal normal 20px/24px Ubuntu;
+  letter-spacing: 0px;
+  color: #C0C6CA;
+}
+.pp
+{
+  margin-top: 25px;
+  height: 42px;
+}
+
+
+/* pop 3 */
+
+
+.top
+{
+  text-align: left;
+  font: normal normal normal 28px/32px Ubuntu;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+
+.crossEdit
+{
+  float: right;
+margin: 30px;
+width: 24px;
+height: 24px;
+background: transparent  0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.cancel{
+  color: white; 
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+width: 60px;
+height: 30px;
+background: #2C404E 0% 0% no-repeat padding-box;
+}
+
+
+label
+{
+width: 163px;
+height: 23px;
+margin-top: 10px;
+color: #97A1A9;
+text-align: left;
+font: normal normal normal 20px/24px Ubuntu;
+letter-spacing: 0.19px;
+opacity: 1;
+display: inline-block;
+}
+
+#iamount
+{
+
+  width: 300px;
+  height: 45px;
+  margin-top: 10px;
+  background: #283A46 0% 0% no-repeat padding-box;
+  border: 1px solid #356680;
+  border-radius: 10px;
+  opacity: 1;
+}
+#notes
+{
+  
+  width: 300px;
+height: 191px;
+margin-top: 20px;
+
+background: #283A46 0% 0% no-repeat padding-box;
+border: 1px solid #356680;
+border-radius: 10px;
+opacity: 1;
+}
+#Reset
+{
+  color: white; 
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+width: 60px;
+height: 30px;
+background: #2C404E 0% 0% no-repeat padding-box;
+}
+#Save
+{
+color: white; 
+border: 1px solid #97A1A9;
+border-radius: 10px;
+opacity: 1;
+width: 60px;
+height: 30px;
+background: #14AFF1 0% 0% no-repeat padding-box;
+}
+
+.del-content
+{
+  margin-left: 15px;
+  margin-right: 20px;
+  width: 531px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+  font: normal normal normal 20px/24px Ubuntu;
+  letter-spacing: 0px;
+  color: #C0C6CA;
+  background: #2A3E4C 0% 0% no-repeat padding-box;
+box-shadow: 0px 8px 24px #00000029;
+border-radius: 6px;
+opacity: 1;
+}
+
+
+ 
